@@ -1,6 +1,6 @@
 import React, { HTMLProps } from 'react';
 
-import { Container } from '@layouts';
+import { Container } from '@layouts/';
 
 export const Footer: React.FC<HTMLProps<HTMLDivElement>> = ({ ...attrs }) => (
   <footer className="Footer" {...attrs}>

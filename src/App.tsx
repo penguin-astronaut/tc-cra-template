@@ -4,9 +4,9 @@ import { Routes, Route } from 'react-router-dom';
 // eslint-disable-next-line import/extensions
 import '@assets/scss/main.scss';
 
-import { Header, Footer } from '@components';
-import { Home, About, NotFound } from '@pages';
-import { Container } from '@layouts';
+import { Header, Footer } from '@components/';
+import { Home, About, NotFound } from '@pages/';
+import { Container } from '@layouts/';
 
 const App = () => (
   <div className="ui-wrapper">

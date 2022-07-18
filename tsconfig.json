@@ -15,14 +15,14 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "baseUrl": ".",
+    "baseUrl": "./src",
     "paths": {
-      "@components": ["./src/components"],
-      "@assets/*": ["./src/assets/*"],
-      "@layouts": ["./src/layouts/"],
-      "@pages": ["./src/pages/"],
-      "@icons/*": ["./src/icons/*"],
-      "@src/*": ["./src/*"]
+      "@pages/*": ["./pages", "./pages/*"],
+      "@components/*": ["./components", "./components/*"],
+      "@icons/*": ["./icons", "./icons/*"],
+      "@layouts/*": ["./layouts", "./layouts/*"],
+      "@assets/*": ["./assets", "./assets/*"],
+      "@base/*": ["./*"]
     }
   },
   "include": ["src"]

@@ -2,10 +2,10 @@ import React, { HTMLProps } from 'react';
 import classNames from 'classnames';
 import { NavLink } from 'react-router-dom';
 
-import { Container } from '@layouts';
+import { Container } from '@layouts/';
 import { Logo } from '@icons/Logo';
 
-import { app } from '@src/_config';
+import { app } from '@base/_config';
 
 import './Header.scss';
 
