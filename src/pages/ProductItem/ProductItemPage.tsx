@@ -15,7 +15,7 @@ export const ProductItemPage = () => {
   useEffect(() => {
     const existItem = products.find((item) => item.alias === itemAlias);
     if (!existItem) {
-      navigate('/');
+      navigate('/404');
     } else {
       setProduct(existItem);
     }

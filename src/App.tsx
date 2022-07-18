@@ -18,6 +18,7 @@ const App = () => (
           <Route path="/products" element={<Navigate to="/" />} />
           <Route path="/products/:itemAlias" element={<ProductItemPage />} />
           <Route path="/about" element={<About />} />
+          <Route path="/404" element={<NotFound />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Container>
