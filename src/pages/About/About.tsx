@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container } from '@layouts';
+import { Container } from '@layouts/';
 
 export const About = () => (
   <Container>

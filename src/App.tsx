@@ -1,11 +1,11 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 
 // eslint-disable-next-line import/extensions
 import '@assets/scss/main.scss';
 
 import { Header, Footer } from '@components/';
-import { Home, About, NotFound } from '@pages/';
+import { Home, About, NotFound, ProductItemPage } from '@pages/';
 import { Container } from '@layouts/';
 
 const App = () => (
@@ -15,6 +15,8 @@ const App = () => (
       <Container>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/products" element={<Navigate to="/" />} />
+          <Route path="/products/:itemAlias" element={<ProductItemPage />} />
           <Route path="/about" element={<About />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
