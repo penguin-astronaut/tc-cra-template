@@ -8,6 +8,7 @@ import { Logo } from '@icons/Logo';
 import { app } from '@base/_config';
 
 import './Header.scss';
+import { CartWidget } from './CartWidget';
 
 const menuLinks = [
   {
@@ -17,6 +18,10 @@ const menuLinks = [
   {
     title: 'About',
     alias: '/about',
+  },
+  {
+    title: <CartWidget />,
+    alias: '/cart',
   },
 ];
 

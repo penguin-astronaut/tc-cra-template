@@ -38,3 +38,23 @@
     }
   }
 }
+
+.cart-widget {
+  display: flex;
+  position: relative;
+  &__counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    align-self: flex-start;
+    color: var(--ui-g-0);
+    background: var(--ui-primary-color);
+    font-size: 9px;
+    border-radius: 50%;
+    position: absolute;
+    left: 11px;
+    bottom: 8px;
+  }
+}

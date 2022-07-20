@@ -25,5 +25,5 @@
       "@base/*": ["./*"]
     }
   },
-  "include": ["src"]
+  "include": ["src", "additional.d.ts"]
 }

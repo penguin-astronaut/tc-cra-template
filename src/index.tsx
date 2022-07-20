@@ -4,6 +4,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 import 'uimini';
 
+import { Store } from '@base/Store';
 import App from './App';
 
 const root = ReactDOM.createRoot(
@@ -11,8 +12,10 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Router>
-      <App />
-    </Router>
+    <Store>
+      <Router>
+        <App />
+      </Router>
+    </Store>
   </React.StrictMode>
 );

@@ -5,7 +5,7 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import '@assets/scss/main.scss';
 
 import { Header, Footer } from '@components/';
-import { Home, About, NotFound, ProductItemPage } from '@pages/';
+import { Home, About, NotFound, ProductItemPage, Cart } from '@pages/';
 import { Container } from '@layouts/';
 
 const App = () => (
@@ -18,6 +18,7 @@ const App = () => (
           <Route path="/products" element={<Navigate to="/" />} />
           <Route path="/products/:itemAlias" element={<ProductItemPage />} />
           <Route path="/about" element={<About />} />
+          <Route path="/cart" element={<Cart />} />
           <Route path="/404" element={<NotFound />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

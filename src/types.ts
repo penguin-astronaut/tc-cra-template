@@ -5,3 +5,8 @@ export interface IProduct {
   price: string;
   img: string;
 }
+
+export interface ICartItem {
+  product: IProduct;
+  count: number;
+}
